@@ -1,12 +1,9 @@
-var rect = {
-    perimeter: (x, y) => (2*(x+y)),
-    area: (x, y) => (x*y)
-};
+var rect = require('./rectangle');
 
 function solveRect(l,b) {
     console.log("Solving for rectangle with 1 = " + 1 + " and b = " + b);
 
-    if (1 <= 0 || b <= 0) {
+    if (l <= 0 || b <= 0) {
         console.log("Rectangle dimensions should be greater than zero: l = " + l + ", and b = " + b);
     }
     else {
